@@ -1,5 +1,5 @@
-#pragma once
-
+﻿#pragma once
+#include <string>
 namespace CLRProblem3Shermatov {
 
 	using namespace System;
@@ -9,6 +9,8 @@ namespace CLRProblem3Shermatov {
 	using namespace System::Data;
 	using namespace System::Drawing;
 	using namespace System::IO;
+	using namespace std;
+
 
 	/// <summary>
 	/// Summary for MyForm
@@ -109,20 +111,22 @@ namespace CLRProblem3Shermatov {
 			// 
 			// nkey
 			// 
-			this->nkey->AutoSize = true;
+			this->nkey->AutoEllipsis = true;
 			this->nkey->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->nkey->Location = System::Drawing::Point(13, 156);
 			this->nkey->Name = L"nkey";
-			this->nkey->Size = System::Drawing::Size(51, 20);
+			this->nkey->Size = System::Drawing::Size(200, 20);
 			this->nkey->TabIndex = 2;
-			this->nkey->Text = L"label2";
+			this->nkey->Text = L"n";
 			this->nkey->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->nkey->Visible = false;
 			this->nkey->Click += gcnew System::EventHandler(this, &MyForm::label2_Click);
 			// 
 			// dataGridView1
 			// 
+			this->dataGridView1->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::Fill;
+			this->dataGridView1->AutoSizeRowsMode = System::Windows::Forms::DataGridViewAutoSizeRowsMode::AllCells;
 			this->dataGridView1->BackgroundColor = System::Drawing::Color::White;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(17, 56);
@@ -142,105 +146,105 @@ namespace CLRProblem3Shermatov {
 			// 
 			// M2key
 			// 
-			this->M2key->AutoSize = true;
+			this->M2key->AutoEllipsis = true;
 			this->M2key->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->M2key->Location = System::Drawing::Point(226, 186);
 			this->M2key->Name = L"M2key";
-			this->M2key->Size = System::Drawing::Size(51, 20);
+			this->M2key->Size = System::Drawing::Size(200, 20);
 			this->M2key->TabIndex = 5;
-			this->M2key->Text = L"label3";
+			this->M2key->Text = L"μ";
 			this->M2key->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->M2key->Visible = false;
 			// 
 			// M3key
 			// 
-			this->M3key->AutoSize = true;
+			this->M3key->AutoEllipsis = true;
 			this->M3key->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->M3key->Location = System::Drawing::Point(226, 219);
 			this->M3key->Name = L"M3key";
-			this->M3key->Size = System::Drawing::Size(51, 20);
+			this->M3key->Size = System::Drawing::Size(200, 20);
 			this->M3key->TabIndex = 6;
-			this->M3key->Text = L"label4";
+			this->M3key->Text = L"μ";
 			this->M3key->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->M3key->Visible = false;
 			// 
 			// V4key
 			// 
-			this->V4key->AutoSize = true;
+			this->V4key->AutoEllipsis = true;
 			this->V4key->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->V4key->Location = System::Drawing::Point(13, 281);
 			this->V4key->Name = L"V4key";
-			this->V4key->Size = System::Drawing::Size(51, 20);
+			this->V4key->Size = System::Drawing::Size(200, 20);
 			this->V4key->TabIndex = 7;
-			this->V4key->Text = L"label5";
+			this->V4key->Text = L"ϑ";
 			this->V4key->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->V4key->Visible = false;
 			// 
 			// M4key
 			// 
-			this->M4key->AutoSize = true;
+			this->M4key->AutoEllipsis = true;
 			this->M4key->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->M4key->Location = System::Drawing::Point(226, 252);
 			this->M4key->Name = L"M4key";
-			this->M4key->Size = System::Drawing::Size(51, 20);
+			this->M4key->Size = System::Drawing::Size(200, 20);
 			this->M4key->TabIndex = 8;
-			this->M4key->Text = L"label6";
+			this->M4key->Text = L"μ";
 			this->M4key->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->M4key->Visible = false;
 			// 
 			// V3key
 			// 
-			this->V3key->AutoSize = true;
+			this->V3key->AutoEllipsis = true;
 			this->V3key->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->V3key->Location = System::Drawing::Point(13, 252);
 			this->V3key->Name = L"V3key";
-			this->V3key->Size = System::Drawing::Size(51, 20);
+			this->V3key->Size = System::Drawing::Size(200, 20);
 			this->V3key->TabIndex = 9;
-			this->V3key->Text = L"label7";
+			this->V3key->Text = L"ϑ";
 			this->V3key->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->V3key->Visible = false;
 			// 
 			// V2key
 			// 
-			this->V2key->AutoSize = true;
+			this->V2key->AutoEllipsis = true;
 			this->V2key->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->V2key->Location = System::Drawing::Point(13, 219);
 			this->V2key->Name = L"V2key";
-			this->V2key->Size = System::Drawing::Size(51, 20);
+			this->V2key->Size = System::Drawing::Size(200, 20);
 			this->V2key->TabIndex = 10;
-			this->V2key->Text = L"label8";
+			this->V2key->Text = L"ϑ";
 			this->V2key->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->V2key->Visible = false;
 			// 
 			// V1key
 			// 
-			this->V1key->AutoSize = true;
+			this->V1key->AutoEllipsis = true;
 			this->V1key->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->V1key->Location = System::Drawing::Point(13, 186);
 			this->V1key->Name = L"V1key";
-			this->V1key->Size = System::Drawing::Size(51, 20);
+			this->V1key->Size = System::Drawing::Size(200, 20);
 			this->V1key->TabIndex = 11;
-			this->V1key->Text = L"label9";
+			this->V1key->Text = L"ϑ";
 			this->V1key->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->V1key->Visible = false;
 			// 
 			// hkey
 			// 
-			this->hkey->AutoSize = true;
+			this->hkey->AutoEllipsis = true;
 			this->hkey->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->hkey->Location = System::Drawing::Point(226, 156);
 			this->hkey->Name = L"hkey";
-			this->hkey->Size = System::Drawing::Size(60, 20);
+			this->hkey->Size = System::Drawing::Size(200, 20);
 			this->hkey->TabIndex = 12;
-			this->hkey->Text = L"label10";
+			this->hkey->Text = L"h";
 			this->hkey->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->hkey->Visible = false;
 			// 
@@ -330,13 +334,13 @@ namespace CLRProblem3Shermatov {
 
 		nkey->Text = "n= " + System::Convert::ToString(nn);
 		hkey->Text = "h= " + System::Convert::ToString(h);
-		V1key->Text = "V1= " + System::Convert::ToString(V1);
-		V2key->Text = "V2= " + System::Convert::ToString(V2);
-		V3key->Text = "V3= " + System::Convert::ToString(V3);
-		V4key->Text = "V4= " + System::Convert::ToString(V4);
-		M2key->Text = "M2= " + System::Convert::ToString(M2);
-		M3key->Text = "M3= " + System::Convert::ToString(M3);
-		M4key->Text = "M4= " + System::Convert::ToString(M4);
+		V1key->Text += "1= " + System::Convert::ToString(V1);
+		V2key->Text += "2= " + System::Convert::ToString(V2);
+		V3key->Text += "3= " + System::Convert::ToString(V3);
+		V4key->Text += "4= " + System::Convert::ToString(V4);
+		M2key->Text += "2= " + System::Convert::ToString(M2);
+		M3key->Text += "3= " + System::Convert::ToString(M3);
+		M4key->Text += "4= " + System::Convert::ToString(M4);
 
 		nkey->Visible = true;
 		hkey->Visible = true;
